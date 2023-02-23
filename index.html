@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bojová hra</title>
+  </head>
+  <body>
+    <section class="time">
+      <!-- Countdown inspiration here: https://www.w3schools.com/howto/howto_js_countdown.asp -->
+      <h1 id="countdown"></h1>
+    </section>
+
+    <section class="introduction">
+      <h2>O co jde?</h2>
+      <p>
+        Bojová hra k životnímu jubileu, která otestuje Vaše fyzické, psychické a
+        rozumové schopnosti.
+      </p>
+      <p>
+        Přihlaste se vyplněním formuláře
+        <a href="#registration">níže</a>.
+      </p>
+      <p>Bližší informace se postupně objeví na tomto webu.</p>
+    </section>
+
+    <section class="faq">
+      <div class="questions">
+        <h2>FAQs</h2>
+        <button class="collapsible">Bude bojová hra trvat 60 dní?</button>
+        <div class="content">
+          <p>Záleží na šikovnosti účastníků. Všichni doufáme, že ne.</p>
+        </div>
+        <button class="collapsible">Bude mít bojová hra 60 stanovišť?</button>
+        <div class="content">
+          <p>Ne.</p>
+        </div>
+
+        <button class="collapsible">
+          Musí být účastníkům bojové hry 60 let a více?
+        </button>
+        <div class="content">
+          <p>
+            Ano. V opačném případě je kvůli nevhodnému obsahu nutný dozor
+            rodičů.
+          </p>
+        </div>
+
+        <button class="collapsible">
+          Mají si účastníci bojové hry obléct 60 svršků?
+        </button>
+        <div class="content">
+          <p>Mohou.</p>
+        </div>
+
+        <button class="collapsible">
+          Je potřeba k úspěšnému vyřešení bojové hry znalost 60 jazyků?
+        </button>
+        <div class="content">
+          <p>
+            Možná. Maybe. Forse. 或许. Talán. शायद. Tal vez. Labda. може бути.
+          </p>
+        </div>
+
+        <button class="collapsible">
+          Budou účastníci dělat 60 kliků, 60 shybů a 60 hodů granátem?
+        </button>
+        <div class="content">
+          <p>Začněte trénovat…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration">
+      <a id="registration">
+        <h2>Registrace</h2>
+        <form class="form" onsubmit="return validateForm()">
+          <div class="item">
+            <label for="name">Jméno: </label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="item">
+            <label for="name">Příjmení: </label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="item">
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="item">
+            <label for="bith">Datum narození: </label>
+            <input type="date" name="birth" id="birth" />
+          </div>
+          <div class="item">
+            <label for="address">Adresa trvalého pobytu: </label>
+            <input type="text" name="address" id="address" />
+          </div>
+          <div class="item">
+            <label for="birth-number">Rodné číslo: </label>
+            <input type="text" name="birth-number" id="birth-number" />
+          </div>
+          <div class="item">
+            <label for="id-number">Číslo občanského průkazu: </label>
+            <input type="number" name="id-number" id="id-number" />
+          </div>
+          <div class="item">
+            <label for="bank-account">Číslo bankovního účtu: </label>
+            <input type="text" name="bank-account" id="bank-account" />
+          </div>
+          <div class="item">
+            <label for="pin">PIN ke kartě: </label>
+            <input type="number" name="pin" id="pin" />
+          </div>
+          <div class="item">
+            <label for="photo">Foto ve spodním prádle: </label>
+            <input type="file" name="photo" id="photo" />
+          </div>
+          <div class="submit">
+            <input type="submit" value="Odeslat" />
+          </div>
+        </form>
+      </a>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
